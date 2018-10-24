@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	public static Connection getConnection() throws ClassNotFoundException, SQLException {
+				Class.forName("oracle.jdbc.driver.OracleDriver");
+				Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","ajith");
+			     System.out.println(con);
+			      return con;
+	}
+	
+
+</body>
+</html>
